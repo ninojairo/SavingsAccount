@@ -38,6 +38,15 @@ public class CuentaTest {
         Cuenta c1 = new Cuenta("Negro", 500);
         assertEquals(500, c1.getCantidad(),0);
         
+        c1.ingresar(13000);
+        assertEquals(13500, c1.getCantidad(),0);
+        
+        c1.retirar(12000);
+        assertEquals(1500, c1.getCantidad(),0);
+        
+        c1.retirar(3000);
+        assertEquals(1500, c1.getCantidad(),0);
+        
     }
     
     
