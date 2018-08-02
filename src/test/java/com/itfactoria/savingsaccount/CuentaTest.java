@@ -45,7 +45,7 @@ public class CuentaTest {
         assertEquals(1500, c1.getCantidad(),0);
         
         c1.retirar(3000);
-        assertEquals(1500, c1.getCantidad(),0);
+        assertEquals(-1500, c1.getCantidad(),0);
         
     }
     
