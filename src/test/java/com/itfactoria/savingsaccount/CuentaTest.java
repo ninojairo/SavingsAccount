@@ -35,6 +35,10 @@ public class CuentaTest {
         Cuenta c = new Cuenta("Chikis", -500);
         assertEquals(0, c.getCantidad(),0);
         
+        c.ingresar(133);
+        assertEquals(133, c.getCantidad(),0);
+        
+        
         Cuenta c1 = new Cuenta("Negro", 500);
         assertEquals(500, c1.getCantidad(),0);
         
