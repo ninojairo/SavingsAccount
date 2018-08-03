@@ -10,12 +10,12 @@ package com.itfactoria.savingsaccount;
  * @author jnino
  */
 public class Cuenta {
+
     private String titular;
     private double cantidad;
 
     public Cuenta(String titular) {
-        //this.titular = titular;
-        this(titular,0);
+        this(titular, 0);
     }
 
     public Cuenta(String titular, double cantidad) {
@@ -24,8 +24,7 @@ public class Cuenta {
         if (this.cantidad < 0) {
             this.cantidad = 0;
         }
-        
-        
+
     }
 
     public String getTitular() {
@@ -43,30 +42,23 @@ public class Cuenta {
     public void setCantidad(double cantidad) {
         this.cantidad = cantidad;
     }
-    
+
     /**
      * @param cantidad
      */
-    public void ingresar(double cantidad){
-        if (cantidad > 0){
+    public void ingresar(double cantidad) {
+        if (cantidad > 0) {
             this.cantidad += cantidad;
         }
     }
-    
+
     /**
      * @param cantidad
      */
-    public void retirar(double cantidad){
-        
-        this.cantidad -=cantidad;
-        
-        /*if(this.cantidad - Math.abs(this.cantidad)<0){
-            this.cantidad =0;
-        }
-        else{
-            this.cantidad -=cantidad;
-        }*/
+    public void retirar(double cantidad) {
+
+        this.cantidad -= cantidad;
+
     }
-    
-    
+
 }
