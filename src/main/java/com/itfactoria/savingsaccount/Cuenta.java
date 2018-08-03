@@ -57,12 +57,15 @@ public class Cuenta {
      * @param cantidad
      */
     public void retirar(double cantidad){
-        if(this.cantidad - Math.abs(this.cantidad)<0){
+        
+        this.cantidad -=cantidad;
+        
+        /*if(this.cantidad - Math.abs(this.cantidad)<0){
             this.cantidad =0;
         }
         else{
             this.cantidad -=cantidad;
-        }
+        }*/
     }
     
     
